@@ -1,0 +1,41 @@
+{
+  "name": "frontend",
+  "version": "1.0.0",
+  "description": "React.js Frontend",
+  "private": true,
+  "scripts": {
+    "dev": "cross-env NODE_ENV=development webpack serve --progress",
+    "build": "cross-env NODE_ENV=production webpack --progress",
+    "apollo:codegen": "apollo client:codegen src/types --target=typescript --outputFlat"
+  },
+  "author": "KyuHyuk Lee <lee@kyuhyuk.kr>",
+  "license": "MIT",
+  "dependencies": {
+    "@apollo/client": "^3.5.5",
+    "graphql": "^15.7.2",
+    "react": "^17.0.2",
+    "react-dom": "^17.0.2",
+    "react-router": "^6.0.2",
+    "react-router-dom": "^6.0.2"
+  },
+  "devDependencies": {
+    "@types/react": "^17.0.37",
+    "@types/react-dom": "^17.0.11",
+    "@types/react-router": "^5.1.17",
+    "@types/react-router-dom": "^5.3.2",
+    "@types/webpack": "^5.28.0",
+    "apollo": "^2.33.9",
+    "apollo-language-server": "^1.26.7",
+    "clean-webpack-plugin": "^4.0.0",
+    "cross-env": "^7.0.3",
+    "css-loader": "^6.5.1",
+    "file-loader": "^6.2.0",
+    "html-webpack-plugin": "^5.5.0",
+    "style-loader": "^3.3.1",
+    "ts-loader": "^9.2.6",
+    "typescript": "^4.5.2",
+    "webpack": "^5.64.4",
+    "webpack-cli": "^4.9.1",
+    "webpack-dev-server": "^4.6.0"
+  }
+}
