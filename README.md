@@ -3,6 +3,11 @@
 A template made up of a combination of Nest.js + GraphQL + React + TypeScript.  
 You can use this template to easily build services with a combination of Nest.js + GraphQL + React + TypeScript.
 
+# Environment
+
+- **Node.js** v16.13.0
+- **NPM** v8.2.0
+
 ## Getting Started
 
 ```sh
@@ -67,8 +72,3 @@ npm run dev
 - `frontend/dist` : Output of the built frontend project is saved
 - `frontend/src/index.tsx` : Frontend entry point
 - `frontend/src/types` : Containing GraphQL Types created through `npm run apollo:codegen`.
-
-# Test Environment
-
-- **Node.js** v16.13.0
-- **NPM** v8.2.0

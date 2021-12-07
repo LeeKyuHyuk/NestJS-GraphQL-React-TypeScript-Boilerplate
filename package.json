@@ -1,6 +1,6 @@
 {
   "name": "nestjs-graphql-react-typescript-boilerplate",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "NestJS + GraphQL + React + TypeScript Boilerplate",
   "private": true,
   "workspaces": [
@@ -8,7 +8,7 @@
     "frontend"
   ],
   "scripts": {
-    "postinstall": "rm -rf node_modules/apollo-language-server/node_modules/graphql",
+    "postinstall": "rimraf node_modules/apollo-language-server/node_modules/graphql",
     "dev": "concurrently \"npm run start:dev --workspace=backend\" \"npm run dev --workspace=frontend\"",
     "build": "npm run build --workspace=backend --workspace=frontend",
     "apollo:codegen": "npm run apollo:codegen --workspace=frontend"
@@ -24,6 +24,7 @@
   },
   "homepage": "https://github.com/LeeKyuHyuk/NestJS-GraphQL-React-TypeScript-Boilerplate#readme",
   "dependencies": {
-    "concurrently": "^6.4.0"
+    "concurrently": "^6.4.0",
+    "rimraf": "^3.0.2"
   }
 }

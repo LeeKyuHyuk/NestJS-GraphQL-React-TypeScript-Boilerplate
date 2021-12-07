@@ -1,5 +1,6 @@
 import { gql, useQuery } from "@apollo/client";
 import React from "react";
+import { Link } from "react-router-dom";
 import { GetAllPerson } from "./types/GetAllPerson";
 
 const GET_ALL_PERSON = gql`
@@ -33,7 +34,7 @@ const People = () => {
           {data?.getAllPerson?.map((person) => (
             <tr key={person?.id}>
               <td>
-                <a href={`/detail/${person?.id}`}>{person?.name}</a>
+                <Link to={`/detail/${person?.id}`}>{person?.name}</Link>
               </td>
               <td>{person?.number || "N/A"}</td>
               <td>{person?.email || "N/A"}</td>
